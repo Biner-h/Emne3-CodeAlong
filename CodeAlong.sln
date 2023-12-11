@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeAlong", "CodeAlong\CodeAlong.csproj", "{8A12B4B3-C98A-4BD0-9C8B-35D66F681EEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A12B4B3-C98A-4BD0-9C8B-35D66F681EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A12B4B3-C98A-4BD0-9C8B-35D66F681EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A12B4B3-C98A-4BD0-9C8B-35D66F681EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A12B4B3-C98A-4BD0-9C8B-35D66F681EEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE52EE4E-D64D-4B48-A925-9A047A94E1C4}
+	EndGlobalSection
+EndGlobal
