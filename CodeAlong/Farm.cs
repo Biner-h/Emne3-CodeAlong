@@ -31,5 +31,54 @@ namespace CodeAlong
             AddAnimal(newAnimal);
             newAnimal.Greet();
         }
+
+        public void GreetAllAnimals()
+        {
+            foreach (var animal in AllAnimals)
+            {
+                animal.Greet();
+            }
+        }
+
+        public void TalkToAnimal()
+        {
+            Console.WriteLine("\nHvilke dyr skal snakke med deg?");
+
+
+            for (int i = 0; i < AllAnimals.Count; i++)
+            {
+                Console.WriteLine($"{i} {AllAnimals[i].Name}");
+            }
+
+            Console.WriteLine("\nSkriv inn tallet til dyret du vil snakke med");
+            int input = int.Parse(Console.ReadLine());
+
+            AllAnimals[input].Greet();
+        }
+
+        public void menu()
+        {
+            while (true)
+            { 
+                Console.WriteLine("1. Hils på dyrene.");
+                Console.WriteLine("2. Snakk med et spesifikt dyr.");
+                Console.WriteLine("3. Legg til nytt dyr.");
+                string input = Console.ReadLine();
+
+                switch (input)
+                {
+                    case "1":
+                        GreetAllAnimals(); break;
+
+                    case "2":
+                        TalkToAnimal(); break;
+
+                    case "3":
+                        AddYourAnimal(); break;
+
+                    default: Console.WriteLine("Feil!"); break;
+                }
+            }
+        }
     }
 }

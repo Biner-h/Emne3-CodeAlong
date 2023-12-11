@@ -12,30 +12,6 @@ new Animal("Katt", "Mjau"),
 new Animal("Hund", "Woff")
 });
 
-foreach (var animal in farm.AllAnimals)
-{
-    animal.Greet();
-}
-
-Console.WriteLine("\nHvilke dyr skal snakke med deg?");
-
-
-for (int i = 0; i < farm.AllAnimals.Count; i++)
-{
-    Console.WriteLine($"{i} {farm.AllAnimals[i].Name}");
-}
-
-Console.WriteLine("\nSkriv inn tallet til dyret du vil snakke med");
-int input = int.Parse(Console.ReadLine());
-
-farm.AllAnimals[input].Greet();
-
-Console.WriteLine("\nVil du legge til flere dyr og hvilken lyd de lager?");
-string input2 = Console.ReadLine().ToLower();
-
-if (input2 == "ja")
-{
-    farm.AddYourAnimal();
-}
+farm.menu();
 
 
